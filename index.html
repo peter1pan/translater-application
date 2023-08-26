@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css.css" />
+    <title>Translate</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rigt-bar">
+        <div>
+          <div id="langs">
+            <i id="from" class="fa-solid fa-volume-low icons"></i>
+            <select id="firstLang" value=""></select>
+            <i id="from" class="fa-solid fa-copy icons"></i>
+          </div>
+          <textarea
+            id="firstText"
+            cols="30"
+            rows="10"
+            placeholder="Text"
+          ></textarea>
+        </div>
+        <button id="change-lang">
+          <i class="fa-sharp fa-solid fa-repeat"></i>
+        </button>
+        <div>
+          <div id="langs">
+            <i id="to" class="fa-solid fa-volume-low icons"></i>
+            <select id="secondLang" value=""></select>
+            <i id="to" class="fa-solid fa-copy icons"></i>
+          </div>
+          <textarea
+            id="secondText"
+            cols="30"
+            rows="10"
+            placeholder="Translate"
+            disabled
+          ></textarea>
+        </div>
+      </div>
+    </div>
+    <div id="btn"><button id="translateBtn">Translate</button></div>
+    <script src="languages.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

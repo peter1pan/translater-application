@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.rigt-bar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+}
+#btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    #translateBtn {
+        border-radius: 10px;
+        border: none;
+        font-size: 20px;
+        width: 250px;
+        height: 40px;
+        color: black;
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(223, 223, 223);
+            transition: 0.3s;
+        }
+    }
+}
+
+textarea {
+    border: none;
+    max-width: 237px;
+    max-height: 150px;
+    min-width: 237px;
+    min-height: 150px;
+    font-size: 15px;
+}
+#secondText,
+#firstText {
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+select {
+    font-size: 15px;
+    border-radius: 10px;
+    border: 3px solid whitesmoke;
+    padding: 0.2rem;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#change-lang {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#langs {
+    margin-bottom: 10px;
+}
+
+.fa-volume-low,
+.fa-copy {
+    font-size: 20px;
+    cursor: pointer;
+}
